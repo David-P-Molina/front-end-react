@@ -6,7 +6,7 @@
     align-items: center;
 
     padding: 1rem 2rem;
-    background: rgba(255,255,255, 0.25);
+    background: rgba(3, 22, 170, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255,255,255, 0.18);
@@ -22,6 +22,7 @@
       width: 90px;
       height: 20px;
   
+      // extra large devices
       @media screen and (min-width: 2000px) {
         width: 180px;
         height: 40px;
@@ -29,9 +30,9 @@
     }
   }
   .app__navbar-links {
-    flex: 1;
+    flex: 0.5;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
   
     list-style: none;
@@ -41,8 +42,8 @@
       cursor: pointer;
   
       flex-direction: column;
-  
-      div {
+    // Not working
+      div { 
         width: 5px;
         height: 5px;
         background: transparent;
@@ -68,7 +69,7 @@
   
       &:hover {
         div {
-          background: var(--secondary-color);
+          background: rgb(37, 130, 124); //change to secondary color var once set
         }
       }
     }
@@ -77,3 +78,15 @@
       display: none;
     }
   }
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+}
+  

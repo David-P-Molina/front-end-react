@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import {HiMenuAlt4, HiX} from 'react-icons/hi'
+import {HiMenu, HiX} from 'react-icons/hi'
 import { motion } from 'framer-motion'
 
 import { images } from '../../constants/index'
@@ -8,7 +8,7 @@ import './NavBar.scss'
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-
+  
   return (
     <>
       <nav className="app__navbar">
@@ -17,14 +17,15 @@ const NavBar = () => {
         </div>
         <ul className="app__navbar-links">
           {['home', 'about', 'work', 'skills', 'contact'].map((element) =>  (
-            <li key={`link-${element}`} className="app__flex p-test">
-              <a href={`#${element}`}>{element}</a>
+            <li key={`link-${element}`} className="app__flex p-text">
+              <div />
+                <a href={`#${element}`}>{element}</a>
             </li>
           ))}
         </ul>
 
         <div className="app__navbar-menu">
-            <HiMenuAlt4 onClick={() => setToggle(true)} />
+            <HiMenu onClick={() => setToggle(true)} />
             {toggle && (
               <motion.div
                 whileInView={{ x: [300,0] }}
