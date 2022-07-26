@@ -1,5 +1,5 @@
 .app__navbar {
-    width: 100%;//change to 100 if not fitting
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -56,10 +56,10 @@
         text-decoration: none;
         flex-direction: column;
   
-        text-transform: uppercase;
-        font-weight: 500;
+        text-transform:capitalize;
+        font-weight: 400;
   
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease-in-out;
   
         &:hover {
           color: var(--secondary-color);
