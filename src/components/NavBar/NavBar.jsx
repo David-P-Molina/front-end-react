@@ -6,10 +6,17 @@ import './NavBar.scss'
 const NavBar = () => {
   return (
     <>
-      <nav>
-        <div>
+      <nav className="app__navbar">
+        <div className="app__logo">
           <img src={images.logo} />
         </div>
+        <ul className="app__navbar-links">
+          {['home', 'about', 'work', 'skills', 'contact'].map((element) =>  (
+            <li key={`link-${element}`} className="app__flex p-test">
+              <a href={`#${element}`}>{element}</a>
+            </li>
+          ))}
+        </ul>
       </nav>
     </>
   )
