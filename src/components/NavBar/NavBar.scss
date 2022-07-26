@@ -6,7 +6,7 @@
     align-items: center;
 
     padding: 1rem 2rem;
-    background: rgba(3, 22, 170, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255,255,255, 0.18);
@@ -57,8 +57,8 @@
         text-decoration: none;
         flex-direction: column;
   
-        text-transform:capitalize;
-        font-weight: 400;
+        text-transform: capitalize;
+        font-weight: 100;
   
         transition: all 0.4s ease-in-out;
   
@@ -69,7 +69,8 @@
   
       &:hover {
         div {
-          background: rgb(37, 130, 124); //change to secondary color var once set
+            transition: all 0.4s ease-in-out;
+          background:  var(--secondary-color);
         }
       }
     }
