@@ -20,7 +20,20 @@ const Header = () => {
               </p>
             </div>
           </div>
+          <div className="tag-cmp app__flex">
+            <p className="p-text">
+              Web Developer
+            </p>
+          </div>
         </div>
+          <motion.div 
+            whileInView={{ opacity: [0,1] }}
+            transition={{ duration: 0.5, delayChildren: 0.5 }}
+            className="app__header-img"
+          >
+            <img src={ images.profile } alt="profile-bg" />
+            
+          </motion.div>
       </motion.div>
       Header
     </div>
