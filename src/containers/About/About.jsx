@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+import { images } from '../../constants'
 import './About.scss'
 
 const aboutArray = [
-  {title: "Web Development", description: 'I am a good web developer', imgURL: ''},
-  {title: "Front End", description: 'I am a good web developer', imgURL: ''},
-  {title: "Back End", description: 'I am a good web developer', imgURL: ''},
-  {title: "Adapting new technologies", description: 'I am a good web developer', imgURL: ''}
+  {title: "Web Development", description: 'I am a good web developer', imgURL: images.about01},
+  {title: "Front End", description: 'I am a good web developer', imgURL: images.about02},
+  {title: "Back End", description: 'I am a good web developer', imgURL: images.about03},
+  {title: "Adapting new technologies", description: 'I am a good web developer', imgURL: images.about04}
 ]
 
 const About = () => {
